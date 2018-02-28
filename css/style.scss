@@ -38,7 +38,6 @@ header {
   display: grid;
   grid-template-columns: 17.5% 30% 52.5% ;
    width: 100%;
-   /* border: red solid 1px; */
   }
 
 
@@ -146,4 +145,15 @@ footer {
   	padding: 10px;
   } */
 
+}
+
+
+       // .....Make site responive from here......
+@media screen and (max-width: 960px) {}
+
+@media screen and (max-width: 770px) {}
+
+@media screen and (max-width: 470px) {
+
+  
 }
