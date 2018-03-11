@@ -22,8 +22,71 @@ body {
 header {
   display: grid;
   grid-template-columns: 17.5% 30% 52.5%;
+  width: 100%; }
+
+.hamburger {
+  cursor: pointer;
+  display: block; }
+
+.line {
+  border-bottom: 5px solid #FFF7E5;
+  width: 35px;
+  margin-left: 20px;
+  margin-bottom: 6px; }
+
+.line:first-child {
+  margin-top: 30px; }
+
+.line:last-child {
+  margin-bottom: 0; }
+
+.sidebar {
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out; }
+
+.active {
+  transform: translateX(0px);
+  border: solid 1px #b8b9c9; }
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-transform: capitalize;
+  font-size: 20px; }
+
+nav {
   width: 100%;
-  /* border: red solid 1px; */ }
+  height: 65%;
+  background-color: #a0d8cd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 0; }
+  nav h3 {
+    color: #FFF7E5;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 1rem 1rem 0;
+    background-color: #a0d8cd; }
+  nav li {
+    border-top: 1px solid #cdd8e8;
+    list-style: none;
+    transition: all 300ms ease-in-out; }
+  nav li:hover {
+    background-color: #93e5d5; }
+  nav a {
+    color: #FFF7E5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    padding: 1rem;
+    display: block; }
+  nav li:first-child {
+    margin-top: 2em; }
 
 /* <........main container.......> */
 #main-container {
@@ -51,8 +114,8 @@ header {
   grid-template-rows: 100%; }
 
 /* #course-gallery1 {
-  grid-column: 1;
-  grid-row: 1;
+grid-column: 1;
+grid-row: 1;
 } */
 /* .....font-families........ */
 /* acta display ,    source sans pro */
@@ -77,9 +140,9 @@ Footer
 ------------------------------------------- */
 footer {
   /* ul li a {
-  	color: #44545E;
-  	padding: 10px;
-  } */ }
+  color: #44545E;
+  padding: 10px;
+} */ }
   footer ul {
     list-style: none;
     width: 100%;
