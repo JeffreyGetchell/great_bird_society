@@ -56,6 +56,7 @@ header {
 .hamburger {
   cursor: pointer;
   display: block;
+  // position: fixed;
 }
 
 .line {
@@ -127,6 +128,9 @@ nav {
     padding: 1rem;
     display: block;
   }
+  a:active {
+    background-color: saturate( $green, 10%);
+  }
 
   li:first-child {
     margin-top: 2em;
@@ -166,10 +170,11 @@ nav {
     border-radius: 0 200px 200px 200px;
     // border-radius: 200px;
     margin-left: 10px;
+    opacity: .7;
   }
  .smaller-finch {
    width: 200px;
-   opacity: .7;
+
  }
 
 }
@@ -193,7 +198,14 @@ nav {
 }
 
 /*<.........course galleries.......> */
-#courses {
+#courses1 {
+
+}
+
+#courses2 {
+
+}
+#courses3 {
 
 }
 
@@ -201,7 +213,19 @@ nav {
   display: grid;
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: 100%;
+  grid-column-gap: 10px;
 }
+button {
+  background-color: $egg;
+  border: 1px solid $darkgrey;
+  font-size: 16px;
+  padding: 2px;
+  margin: 0 5px;
+}
+
+#previous {}
+#next {}
+
 /* #course-gallery1 {
 grid-column: 1;
 grid-row: 1;
