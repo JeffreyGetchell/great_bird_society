@@ -115,7 +115,7 @@ $('#previous1').on('click', function() {
 var imageNumber = 0;
 
 // Write your pseudo code here!
-$('#more').on('click', function() {
+$('#next2').on('click', function() {
   if (imageNumber < 7) {
     imageNumber += 1;
   } else {
@@ -130,7 +130,7 @@ $('#more').on('click', function() {
 
 
 // Write your pseudo code here!
-$('#less').on('click', function() {
+$('#previous2').on('click', function() {
   if (imageNumber > 0) {
     imageNumber -= 1;
   } else {
@@ -143,6 +143,37 @@ $('#less').on('click', function() {
   $('#bestsellers img').eq(imageNumber).show();
 });
 
+// <<..............image gallery2............>>
+var imageNumber = 0;
+
+// Write your pseudo code here!
+$('#next2').on('click', function() {
+  if (imageNumber < 7) {
+    imageNumber += 1;
+  } else {
+    imageNumber = 0;
+  }
+
+  console.log(imageNumber);
+
+  $('#bestsellers img').hide();
+  $('#bestsellers img').eq(imageNumber).show();
+});
+
+
+// Write your pseudo code here!
+$('#new-releases').on('click', function() {
+  if (imageNumber > 0) {
+    imageNumber -= 1;
+  } else {
+    imageNumber = 7;
+  }
+
+  console.log(imageNumber);
+
+  $('#new-releases img').hide();
+  $('#new-releases img').eq(imageNumber).show();
+});
 
 
 // end...

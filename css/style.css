@@ -138,7 +138,7 @@ nav {
 /*<.........course galleries.......> */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(4, 25%);
   grid-template-rows: 100%;
   grid-column-gap: 10px; }
 
@@ -194,7 +194,13 @@ footer {
   #main-ad img {
     max-width: 100%; }
   #main-ad .smaller-finch {
-    max-width: 30%; } }
+    max-width: 30%; }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: 100%;
+    grid-column-gap: 7px; } }
 @media screen and (max-width: 500px) {
   /* ----------------------------------------
   Base Styles
@@ -206,6 +212,12 @@ footer {
   #main-ad img {
     max-width: 90%; }
   #main-ad .smaller-finch {
-    max-width: 30%; } }
+    max-width: 30%; }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 100%;
+    grid-column-gap: 5px; } }
 
 /*# sourceMappingURL=style.css.map */
