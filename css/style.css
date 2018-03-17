@@ -1,5 +1,4 @@
 h2, h3, h5 {
-  background-color: #FFF7E5;
   font-family: "Acta display", serif;
   color: #a0d8cd; }
 
@@ -15,6 +14,7 @@ img {
   max-width: 100%; }
 
 body {
+  width: 100%;
   margin: 0 auto;
   background-color: #FFF7E5; }
 
@@ -136,6 +136,21 @@ nav {
   padding: 2px; }
 
 /*<.........course galleries.......> */
+#courses1 img {
+  display: none; }
+#courses1 img:first-of-type {
+  display: block; }
+
+#courses2 img {
+  display: none; }
+#courses2 img:first-of-type {
+  display: block; }
+
+#courses3 img {
+  display: none; }
+#courses3 img:first-of-type {
+  display: block; }
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 25%);
@@ -144,10 +159,18 @@ nav {
 
 button {
   background-color: #FFF7E5;
-  border: 1px solid #b8b9c9;
-  font-size: 16px;
-  padding: 2px;
-  margin: 0 5px; }
+  border: 2px solid #b8b9c9;
+  border-radius: 200px;
+  font-size: 14px;
+  padding: 1px;
+  margin: 5px; }
+  button p {
+    font-family: "Fondamento";
+    color: #b8b9c9; }
+  button p:hover {
+    background-color: #cdd8e8; }
+  button p:active {
+    background-color: #cdd8e8; }
 
 /* #course-gallery1 {
 grid-column: 1;
@@ -169,15 +192,27 @@ h3 {
 p {
   font-family: "Source sans Pro", sans-serif;
   font-style: normal;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #FFF7E5; }
 
 /* ----------------------------------------
  About Us
 ------------------------------------------- */
+#about-us {
+  background-image: url("../images/image_aboutus.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#about_wrap {
+  width: 100%;
+  margin: 8px 0px 8px 0px; }
+
 /* ----------------------------------------
 Footer
 ------------------------------------------- */
 footer {
+  width: 100%;
+  background-color: #cdd8e8;
   /* ul li a {
   color: #44545E;
   padding: 10px;
@@ -205,6 +240,10 @@ footer {
   /* ----------------------------------------
   Base Styles
   ------------------------------------------- */
+  section {
+    height: auto;
+    overflow: auto; }
+
   p {
     font-size: 12px; }
 

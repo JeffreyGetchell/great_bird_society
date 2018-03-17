@@ -124,8 +124,8 @@ $('#next2').on('click', function() {
 
   console.log(imageNumber);
 
-  $('#bestsellers img').hide();
-  $('#bestsellers img').eq(imageNumber).show();
+  $('#courses2 img').hide();
+  $('#courses2 img').eq(imageNumber).show();
 });
 
 
@@ -139,15 +139,15 @@ $('#previous2').on('click', function() {
 
   console.log(imageNumber);
 
-  $('#bestsellers img').hide();
-  $('#bestsellers img').eq(imageNumber).show();
+  $('#courses2 img').hide();
+  $('#courses2 img').eq(imageNumber).show();
 });
 
-// <<..............image gallery2............>>
+// <<..............image gallery3............>>
 var imageNumber = 0;
 
 // Write your pseudo code here!
-$('#next2').on('click', function() {
+$('#next3').on('click', function() {
   if (imageNumber < 7) {
     imageNumber += 1;
   } else {
@@ -156,13 +156,13 @@ $('#next2').on('click', function() {
 
   console.log(imageNumber);
 
-  $('#bestsellers img').hide();
-  $('#bestsellers img').eq(imageNumber).show();
+  $('#courses3 img').hide();
+  $('#courses3 img').eq(imageNumber).show();
 });
 
 
 // Write your pseudo code here!
-$('#new-releases').on('click', function() {
+$('#previous3').on('click', function() {
   if (imageNumber > 0) {
     imageNumber -= 1;
   } else {
@@ -171,9 +171,15 @@ $('#new-releases').on('click', function() {
 
   console.log(imageNumber);
 
-  $('#new-releases img').hide();
-  $('#new-releases img').eq(imageNumber).show();
+  $('#courses3 img').hide();
+  $('#courses3 img').eq(imageNumber).show();
 });
+
+
+
+
+
+
 
 
 // end...

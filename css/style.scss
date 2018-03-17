@@ -10,10 +10,11 @@ $egg: #FFF7E5;
 
 // @extend goodies here...........//
 %highlight {
-  background-color: $egg;
+  // background-color: $egg;
   font-family: $font-primary;
   color: $green;
 }
+
 // %highlight-gradient {
 //   background-color: ; linear-gradient(to right, $blue, $green); }
 
@@ -33,9 +34,15 @@ img {
 }
 
 body {
+  width: 100%;
   margin: 0 auto;
   background-color: $egg;
 }
+section {
+  // height: 100vh;
+  // overflow: auto;
+}
+
 
 /* <.........header........> */
 header {
@@ -199,15 +206,33 @@ nav {
 
 /*<.........course galleries.......> */
 #courses1 {
-
+  img {
+  display: none;
+  }
+  img:first-of-type {
+  display: block;
+  }
 }
 
 #courses2 {
-
+  img {
+  display: none;
+  }
+  img:first-of-type {
+  display: block;
+  }
 }
+
 #courses3 {
+  img {
+  display: none;
+  }
+  img:first-of-type {
+  display: block;
+  }
 
 }
+
 
 .gallery-grid {
   display: grid;
@@ -217,10 +242,21 @@ nav {
 }
 button {
   background-color: $egg;
-  border: 1px solid $darkgrey;
-  font-size: 16px;
-  padding: 2px;
-  margin: 0 5px;
+  border: 2px solid $darkgrey;
+  border-radius: 200px;
+  font-size: 14px;
+  padding: 1px;
+  margin:  5px;
+  p {
+    font-family: $font-tertiary;
+    color: $darkgrey;
+  }
+  p:hover {
+    background-color: $lightgrey; }
+  p:active {
+    background-color: $lightgrey;
+  }
+
 }
 
 #previous {}
@@ -266,8 +302,8 @@ h5 {
 p {
   font-family: $font-secondary;
   font-style: normal;
-  font-weight: 300
-  // background-color: $white;
+  font-weight: 300;
+  color: $egg;
 }
 
 .section-title {
@@ -277,15 +313,50 @@ p {
 /* ----------------------------------------
  About Us
 ------------------------------------------- */
-#about-us {
+#about-us
+{
+ background-image: url("../images/image_aboutus.png");
+ background-repeat: no-repeat;
+ background-size: cover;
 
+ // background-color: $lightgrey;
+ // background-blend-mode: screen;
+  // .info {
+  //   max-width: 100%;
+  //   z-index: 100;
+  // }
+  // p {
+  //   font-family: $font-secondary;
+  //   font-style: normal;
+  //   font-weight: 300
+  //   // background-color: $white;
+  // }
 }
 
+#about_wrap {
+  width: 100%;
+  margin: 8px 0px 8px 0px;
+}
+figure {
+ //  background-image: url("../images/image_aboutus.jpg");
+ //  background-size: cover;
+ //  background-repeat: no-repeat;
+ //  transition: all 1s ease;
+ //  width: 80%;
+ //  height: 500px;
+ //  border-radius: 200px;
+ //  margin-left: 10px;
+ //  opacity: .5;
+ // z-index: -100;
+ // display: block;
+}
 
 /* ----------------------------------------
 Footer
 ------------------------------------------- */
 footer {
+  width: 100%;
+  background-color: $lightgrey;
   ul {
     list-style: none;
     width: 100%;
@@ -331,6 +402,9 @@ footer {
   /* ----------------------------------------
   Base Styles
   ------------------------------------------- */
+ section { height: auto;
+  			overflow: auto;
+  		}
  p {
    font-size: 12px;
  }
