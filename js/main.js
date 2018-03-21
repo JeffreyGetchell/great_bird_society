@@ -28,7 +28,7 @@ $(window).on('scroll', function () {
     // 'body::after', 'body::before').css('background-color','#419e8c');
    $('html').css('border-color','#419e8c');
   }
-  
+
 });
 // site border is going to transition from a dark green color to a lighter
 //  green color, when user scrolls down below 150px or just below the main img.
@@ -132,6 +132,18 @@ $('#previous3').on('click', function() {
   $('#courses3 img').hide();
   $('#courses3 img').eq(imageNumber).show();
 });
+
+
+// <<.......partners.........>>
+
+$('.partners-wrapper').slick({
+slidesToShow: 2,
+  slidesToScroll: 4,
+  autoplay: true,
+  autoplaySpeed: 4000,
+});
+
+
 
 
 

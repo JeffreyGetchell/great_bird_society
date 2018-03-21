@@ -171,7 +171,16 @@ p {
 
 #about_wrap {
   width: 100%;
+  height: 400px;
   margin: 8px 0px 8px 0px;
+  padding-top: 20px;
+  h3,p {
+    text-align: center;
+    padding: 0 20px;
+  }
+  // p {
+  //   text-align: center;
+  // }
 }
 figure {
  //  background-image: url("../images/image_aboutus.jpg");
@@ -193,21 +202,35 @@ Footer
 footer {
   width: 100%;
   background-color: $lightgrey;
+  text-align: center;
+  margin: 20px 0;
   ul {
+    padding-left: 0px;
     list-style: none;
-    width: 100%;
-    margin: 20px ;
+    // width: 100%;
+    margin: 20px;
+
   }
   li {
+
     display: inline;
-
   }
-  /* ul li a {
-  color: #44545E;
-  padding: 10px;
-} */
 
+  ul li a {
+  padding: 10px;
+  color: $blue;
+ }
+  a:hover, a:active {
+  color: darken( $blue, 10%);
+ }
+  p {
+    padding: 1%;
+  }
+  hr {
+    width: 40%;
+  }
 }
+
 
 
 // .....Make site responive from here......

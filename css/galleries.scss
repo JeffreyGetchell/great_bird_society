@@ -56,6 +56,31 @@ $egg: #FFF7E5;
 
 }
 
+#partners {
+  h4 {
+    text-align: center;
+    color: $egg;
+    background-color: $darkgrey;
+    border-left: 1px solid darken($darkgrey, 20%);
+    border-bottom: 2px solid darken($darkgrey, 30%);
+  }
+}
+.partners-wrapper {
+  max-width: 600px;
+	margin: 0 auto 30px;
+  border: 1px solid darken($darkgrey, 20%);
+
+}
+
+.slick-next:before,
+.slick-prev:before {
+	/* Change arrow color */
+	color: $green;
+	/* Change arrow size */
+	/*font-size: 30px;*/
+
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 25%);
