@@ -29,7 +29,39 @@ $(window).on('scroll', function () {
    $('html').css('border-color','#419e8c');
   }
 
+
 });
+
+$(window).on('scroll', function () {
+ var distanceScrolled = $(window).scrollTop();
+ if(distanceScrolled > 1800){
+  $('html').css('border-color','#419e8c').css('transition', 'all 2.5s ease');
+
+}
+// else {
+//   $('html').css('border-color','#c4e7e0');
+// }
+
+});
+
+
+
+
+
+// <<...............fadeout hawk  slick .........>>
+$('.flyby-wrapper').slick({
+  // dots:true,
+  // infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  // speed: 500
+  autoplay: true,
+  autoplaySpeed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
+
+
 // site border is going to transition from a dark green color to a lighter
 //  green color, when user scrolls down below 150px or just below the main img.
 
@@ -135,12 +167,20 @@ $('#previous3').on('click', function() {
 
 
 // <<.......partners.........>>
+// $(document).ready(function(){
+//   $('.partners-wrapper').slick({
+//     setting-name: setting-value
+//   });
+// });
 
 $('.partners-wrapper').slick({
-slidesToShow: 2,
-  slidesToScroll: 4,
-  autoplay: true,
-  autoplaySpeed: 4000,
+  dots:true,
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  speed: 1000
+  // autoplay: true,
+  // autoplaySpeed: 2000,
 });
 
 
